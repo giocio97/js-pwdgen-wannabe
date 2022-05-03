@@ -10,20 +10,25 @@ console.log(nome)
 // chiediamo il cognome 
 const cognome = prompt(" Cognome?")
 
-document.getElementById("cognome").innerHTML= `  ${cognome}`;
+
 
 console.log(cognome)
 
 // chiediamo il suo colore preferito 
 const colore = prompt(" Il tuo colore preferito?")
 
-document.getElementById("colore").innerHTML= ` Il tuo colore preferito è: ${colore}`; 
+
 console.log(colore)
 
 // chiediamo la sua eta
-const eta = prompt(" Qianti anni hai?")
+const eta = prompt(" Quanti anni hai?")
 const anno = 2022 - eta
 console.log(eta)
 
-document.getElementById("anno").innerHTML= ` Il tuo anno di nascita  è: ${anno}`; 
+
 console.log(anno)
+
+// password
+
+document.getElementById("password").innerHTML= `La tua super-password è: ${nome + cognome + colore + anno}`; 
+console.log (nome + cognome + colore + anno)
